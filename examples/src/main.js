@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import { DvSwitch } from './../../index.js'
-Vue.use(DvSwitch)
-
 import { DvDataList } from 'dv-data-list'
 Vue.use(DvDataList)
+
+import { DvSwitch } from './../../index.js'
+Vue.use(DvSwitch)
 
 import Vuetify from 'vuetify/lib'
 import 'vuetify/src/stylus/app.styl'

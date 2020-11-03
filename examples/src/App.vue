@@ -1,7 +1,6 @@
 <template>
   <v-container
-    fill-height
-    grid-list-xl>
+    fill-height >
     <v-layout
       justify-center
       wrap >
@@ -23,43 +22,37 @@
           </strong>
         </v-chip>
         <v-card flat >
-          <v-card-text>
-            <v-container >
-              <v-layout >
-                <dv-switch
-                  v-model="selected"
-                  :items="items"
-                  color="pink"
-                  outline
-                  badge
-                  item_value="texto" />
-                <v-text-field
-                  v-model="selected" />
-              </v-layout>
-            </v-container>
-            <v-container >
-              <v-layout >
-                <dv-switch
-                  v-model="selected2"
-                  :items="items"
-                  :destacar="{ prop: 'texto', value: 'Color' }"
-                  color="blue-grey"
-                  label />
-                <v-text-field
-                  v-model="selected2" />
-              </v-layout>
-            </v-container>
-            <v-container >
-              <v-layout >
-                <dv-switch
-                  v-model="selected3"
-                  :items="items"
-                  color="cyan"
-                  :destacar="{ prop: 'prepend_activo', value: 'swap_vertical_circle' }"
-                  label
-                  return_object />
-              </v-layout>
-            </v-container>
+          <v-card-text class="pa-0" >
+            <v-layout >
+              <dv-switch
+                v-model="selected"
+                :items="items"
+                color="pink"
+                outline
+                badge
+                item_value="texto" />
+              <v-text-field
+                v-model="selected" />
+            </v-layout>
+            <v-layout >
+              <dv-switch
+                v-model="selected2"
+                :items="items"
+                :destacar="{ prop: 'texto', value: 'Color' }"
+                color="blue-grey"
+                label />
+              <v-text-field
+                v-model="selected2" />
+            </v-layout>
+            <v-layout >
+              <dv-switch
+                v-model="selected3"
+                :items="items"
+                color="cyan"
+                :destacar="{ prop: 'prepend_activo', value: 'swap_vertical_circle' }"
+                label
+                return_object />
+            </v-layout>
           </v-card-text>
           {{ selected3 }}
           <dv-data-list :data="data" />

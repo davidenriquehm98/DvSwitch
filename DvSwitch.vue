@@ -216,7 +216,7 @@ export default {
       default: false
     },
     selected: {
-      type: [Number, String, Array, Object],
+      type: [Number, String, Array, Object, Boolean],
       required: true
     },
     small: {
@@ -371,3 +371,11 @@ export default {
   }
 }
 </script>
+<style>
+.myTb a.v-tabs__item:not(.v-tabs__item--active) {
+  opacity: 1;
+}
+.myTb a.v-tabs__item {
+  padding: 0;
+}
+</style>

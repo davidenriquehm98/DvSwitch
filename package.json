@@ -44,7 +44,7 @@
     "core-js": "^3.6.5",
     "dv-data-list": "git+https://github.com/davidenriquehm98/DvDataList.git",
     "roboto-fontface": "*",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0",
     "vuetify": "^1.5.18",
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-eslint": "~5.0.9",
